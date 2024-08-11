@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabbed Navigation</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="tab-container">
+        <div class="tabs">
+            <button class="tab-link active" onclick="openTab(event, 'home')">Home</button>
+            <button class="tab-link" onclick="openTab(event, 'about')">About</button>
+            <button class="tab-link" onclick="openTab(event, 'services')">Services</button>
+            <button class="tab-link" onclick="openTab(event, 'contact')">Contact</button>
+        </div>
+        <div id="home" class="tab-content active">
+            <h1>Welcome to Home</h1>
+            <p>This is the home page content.</p>
+        </div>
+        <div id="about" class="tab-content">
+            <h1>About Us</h1>
+            <p>Learn more about us on this page.</p>
+        </div>
+        <div id="services" class="tab-content">
+            <h1>Our Services</h1>
+            <p>Details of our services can be found here.</p>
+        </div>
+        <div id="contact" class="tab-content">
+            <h1>Contact Us</h1>
+            <p>Get in touch with us via this page.</p>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+ *{
+   
+   font-size: 2vmin;
+   font-family: Arial, sans-serif;
+   border-radius: 0vmin;
+}
+
+:root{
+
+   --c1 : #fda403;
+   --c2 : #e8751a;
+   --c3 : #c51350;
+   --c4 : #8a1253;
+
+   --b1 : #fda403;
+   --b2 : #e8751a;
+   --b3 : #c51350;
+   --b4 : #8a1253;
+}
+
+#body{
+	position:absolute;
+	top:0px; left:0px;
+	height: 100%; width: 100%;
+	overflow: hidden;
+   background: var(--b1);
+ }
+
+ #content{
+	display: flex;
+	max-width: 90%;
+	max-height: 80%;
+	aspect-ratio: 16 / 11;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	overflow: hidden;
+   background: var(--b2);
+}
+
+#sidebar{
+   position: flex;
+   width: 25%;
+   height: 90%;
+   margin-top: 3.5%;
+   margin-left: 3.5%;
+   background: #0000;/*var(--b3);*/
+}
+
+#headshot{
+   margin-top: 20%;
+   border-radius: 5%;
+   width: 100%;
+}
+
+#namecard{
+   text-align: center;
+   margin-top: 13%;
+   margin-bottom: 3%;
+}
+
+#info_stack{
+   padding-top: 5%;
+   list-style-type: none;
+}
+
+.info_cards{
+   padding-bottom:3%;
+}
+
+#contact_stack{
+   margin-top: 10%;
+   margin-left:auto;
+   margin-right:auto;
+   width: 90%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.contact_card{
+   width: 20%;
+   padding: 0px;
+   margin: 0px;
+   opacity: 0.6;
+   filter: drop-shadow(2px 2px 2px #0008);
+   transition: transform 0.2s ease;
+   transition: filter 0.2s ease;
+}
+
+.contact_card:hover{
+   transform: translate(0px, -1px);
+   filter: drop-shadow(2px 2px 2px #000F);
+}
+.contact_card:active{
+   transform: translate(0px, 2px);
+   filter: drop-shadow(2px 2px 2px #8888);
+}
+
+#info{
+   position: flex;
+   width: 80%;
+   height: 90%;
+   margin-top: 3.5%;
+   margin-left:3.5%;
+   margin-right:3.5%;
+   background: var(--b4);
+}
+
+#tab_buttons
+{
+   position: relative;
+   top: 3%;
+   left: 10%;
+   width: 65%;
+   height: 6%;
+
+   background: var(--b1);
+   
+   display: flex;
+   justify-content: space-between;
+   border-bottom:2px #000 solid;
+
+}
+
+.tab_link{
+   width: fit-content;
+   height: 50%;
+   background-color: var(--b3);
+   transition: background-color 0.3s ease;
+   transition: height 0.15s ease;
+   margin-left: 5%;
+   margin-bottom:-2px;
+   border:2px #000 solid;
+   align-self: flex-end;
+   white-space: nowrap;
+}
+
+.tab_link:hover{
+   background-color: var(--b4);
+   height: 60%;
+}
+
+.tab_link.active{
+   background-color: var(--b1);
+   height:80%;
+}
+
+.tab_page{
+   position:relative;
+   top: 4%;
+   width:95%;
+   margin-left:auto;
+   margin-right:auto;
+   background-color: var(--b1);
+}
+
+.tab_page.active{
+
+}

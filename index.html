@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faith Hinton</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+   <div id="content">
+      <div id="sidebar">
+         <img id="headshot" src="headshot3.jpg" alt="headshot">
+         <p id="namecard">your name</p>
+         <div id="info_stack" >
+            <div class="info_card"><a href="tel:+1234567890">(123) 456-7890</a></div>
+            <div class="info_card"><a href="https://www.linkedin.com/in/faith-hinton-a286661a7">LinkedIn</a></div>
+            <div class="info_card">Responsibility 3</div>
+         </div>
+         <div id="contact_stack">
+            <a class="contact_card" href="mailto:hfaith22@vt.edu"><img src="ema-icon.svg"></a>
+            <a class="contact_card" href="tel:+1234567890"><img src="tel-icon.svg"></a>
+            <a class="contact_card" href="tel:+1234567890"><img src="ins-icon.svg"></a>
+            <a class="contact_card" href="https://www.linkedin.com/in/faith-hinton-a286661a7/"><img src="lin-icon.svg"></a>
+         </div>
+      </div>
+      <div id="info">
+         <div id="tab_buttons">
+            <div class=" tab_link active" onclick="openTab(event, 'tab1')"> &nbsp tab1 &nbsp </div>
+            <div class=" tab_link "       onclick="openTab(event, 'tab2')"> &nbsp tab2 &nbsp </div>
+            <div class=" tab_link "       onclick="openTab(event, 'tab3')"> &nbsp tab3 &nbsp </div>
+            <div class=" tab_link "       onclick="openTab(event, 'tab4')"> &nbsp tab4 &nbsp </div>
+            <div style="width: 50%; height: 100%;"></div>
+         </div>
+
+         <div class="tab_page active" id="tab1">tab1</div>
+         <div class="tab_page "       id="tab2">tab2</div>
+         <div class="tab_page "       id="tab3">tab3</div>
+         <div class="tab_page "       id="tab4">tab4</div>
+      </div>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>
