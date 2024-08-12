@@ -172,6 +172,7 @@
    background-color: #FFF4;
    padding-top: 0.4%;
    color: #0004;
+   user-select: none; /* Standard syntax */
 }
 
 .tab_link:hover{
