@@ -1,4 +1,8 @@
+
+var audio = document.getElementById("audio");
+audio.volume = 0.1;
 function openTab(evt, tabName) {
+    audio.play();
    var i, tabcontent, tablinks;
 
    // Hide all tab contents
