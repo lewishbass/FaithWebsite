@@ -1,7 +1,7 @@
  *{
    
    font-size: 2vmin;
-   font-family: Arial, sans-serif;
+   font-family: Arial, Helvetica, sans-serif;
    border-radius: 0vmin;
 }
 
@@ -12,10 +12,10 @@
    --c3 : #c51350;
    --c4 : #8a1253;
 
-   --b1 : #fda403;
-   --b2 : #e8751a;
-   --b3 : #c51350;
-   --b4 : #8a1253;
+   --b1 : #ffeac3;
+   --b2 : #ffd5b2;
+   --b3 : #f0b4c9;
+   --b4 : #eccede;
 }
 
 #body{
@@ -23,7 +23,8 @@
 	top:0px; left:0px;
 	height: 100%; width: 100%;
 	overflow: hidden;
-   background: var(--b1);
+   background-image: url("campus.jpg");
+   background-size: cover;
  }
 
  #content{
@@ -33,59 +34,93 @@
 	aspect-ratio: 16 / 11;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 10%;
+	margin-top: 7vmin;
 	margin-bottom: 10%;
 	overflow: hidden;
-   background: var(--b2);
+   background: none;/*var(--b2);*/
+   backdrop-filter: blur(10px);
+
+   border-radius: 5vmin;
+   box-shadow: 1vmin 1vmin 5vmin #0002;
 }
 
 #sidebar{
    position: flex;
-   width: 25%;
-   height: 90%;
-   margin-top: 3.5%;
-   margin-left: 3.5%;
-   background: #0000;/*var(--b3);*/
+   width: 33%;
+   height: 100%;
+   margin-top: 0%;
+   margin-left: 0%;
+   background: #f0b4c980;
 }
 
 #headshot{
+   display:flex;
    margin-top: 20%;
+   margin-left: auto;
+   margin-right: auto;
    border-radius: 5%;
-   width: 100%;
+   width: 80%;
 }
 
 #namecard{
+   width: 50%;
+   color: #0008   ;
+   font-weight: bold;
+   font-size: 2.5vmin;
    text-align: center;
-   margin-top: 13%;
-   margin-bottom: 3%;
+   margin-top: 7%;
+   margin-bottom: 7%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#dinky{
+   width:60%;
+   height:1%;
+   background-color: var(--c4);
+
+   margin:auto;
+   border-radius:5px;
 }
 
 #info_stack{
-   padding-top: 5%;
+   margin-left:4%;
+   margin-right:4%;
+   margin-top: 7%;
    list-style-type: none;
+   background-color: none;
 }
 
-.info_cards{
-   padding-bottom:3%;
+.info_card{
+   padding-top:2%;
+   padding-bottom:2%;
+   padding-left:4%;
+   padding-right:4%;
+   color: #0008;
 }
 
 #contact_stack{
    margin-top: 10%;
    margin-left:auto;
    margin-right:auto;
-   width: 90%;
+   width: 80%;
    display: flex;
    justify-content: space-between;
 }
 
 .contact_card{
-   width: 20%;
+   width: 15%;
    padding: 0px;
    margin: 0px;
    opacity: 0.6;
    filter: drop-shadow(2px 2px 2px #0008);
    transition: transform 0.2s ease;
    transition: filter 0.2s ease;
+}
+
+.contact_image{
+   width:100%;
+   height:100%;
 }
 
 .contact_card:hover{
@@ -99,62 +134,62 @@
 
 #info{
    position: flex;
-   width: 80%;
-   height: 90%;
-   margin-top: 3.5%;
-   margin-left:3.5%;
-   margin-right:3.5%;
-   background: var(--b4);
+   width: 90%;
+   height: 100%;
+   margin-top: 0%;
+   background: #ffd5b280;
 }
 
 #tab_buttons
 {
-   position: relative;
-   top: 3%;
-   left: 10%;
-   width: 65%;
+   margin-top: 2%;
+   width: 90%;
    height: 6%;
+   margin-left:auto;
+   margin-right: auto;
 
-   background: var(--b1);
+   background: none;
    
    display: flex;
    justify-content: space-between;
-   border-bottom:2px #000 solid;
+   border-bottom:2px #e6ad7fb0 solid;
+   margin-bottom: 0px;
 
 }
 
 .tab_link{
    width: fit-content;
-   height: 50%;
-   background-color: var(--b3);
+   height: 60%;
    transition: background-color 0.3s ease;
    transition: height 0.15s ease;
    margin-left: 5%;
-   margin-bottom:-2px;
-   border:2px #000 solid;
+   margin-bottom:0px;/*-2px;*/
+   /*border:2px #e6ad7fb0 solid;*/
+   border-radius: 1.2vmin 1.2vmin 0px 0px;
    align-self: flex-end;
    white-space: nowrap;
+   background-color: #FFF4;
 }
 
 .tab_link:hover{
-   background-color: var(--b4);
-   height: 60%;
+   background-color: #FFF6;
+   height: 65%;
 }
 
 .tab_link.active{
-   background-color: var(--b1);
+   background-color: #FFF8;
    height:80%;
 }
 
 .tab_page{
-   position:relative;
-   top: 4%;
-   width:95%;
+   width:90%;
+   height:84%;
    margin-left:auto;
    margin-right:auto;
-   background-color: var(--b1);
+   background-color: #ffeac380;
+   display:none;
 }
 
 .tab_page.active{
-
+   display:none;
 }
