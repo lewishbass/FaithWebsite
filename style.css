@@ -155,11 +155,12 @@
    justify-content: space-between;
    border-bottom:2px #5c715eb0 solid;
    margin-bottom: 0px;
+   overflow-y: hidden;
 }
 
 .tab_link{
    width: fit-content;
-   height: 50%;
+   height: 40%;
    transition: background-color 0.3s ease;
    transition: height 0.15s ease;
    margin-left: 5%;
@@ -175,12 +176,12 @@
 
 .tab_link:hover{
    background-color: #FFF6;
-   height: 60%;
+   height: 50%;
 }
 
 .tab_link.active{
    background-color: #FFF8;
-   height:80%;
+   height:70%;
 }
 
 .tab_page{
