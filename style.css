@@ -130,7 +130,7 @@
 }
 .contact_card:active{
    transform: translate(0px, 2px);
-   filter: drop-shadow(2px 2px 2px #8888);
+   filter: drop-shadow(0px 0px 2px #FFFA);
 }
 
 #info{
