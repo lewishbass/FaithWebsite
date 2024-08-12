@@ -39,7 +39,7 @@
 	margin-bottom: 10%;
 	overflow: hidden;
    background: none;/*var(--b2);*/
-   backdrop-filter: blur(7px);
+   backdrop-filter: blur(15px);
 
    border-radius: 5vmin;
    box-shadow: 1vmin 1vmin 5vmin #0002;
@@ -194,7 +194,7 @@
    background-color: #FFFFFF20;
    display:none;
    padding:4%;
-   color: #0008;
+   color: #0007;
    border-radius: 0% 0% 5% 5%;
 }
 
