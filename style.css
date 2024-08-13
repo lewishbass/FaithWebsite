@@ -55,12 +55,47 @@
 }
 
 #headshot{
-   display:flex;
+   display:none;
    margin-top: 20%;
    margin-left: auto;
    margin-right: auto;
    border-radius: 5%;
    width: 80%;
+   box-shadow: 2px 2px 8px #0008;
+   /*filter: drop-shadow(2px 2px 8px #0008);*/
+   background-color: rgba(255, 202, 202, 0.24);
+   border: solid 1vmin #4A5C48;
+   border-radius: 50%;
+   box-sizing: border-box;
+}
+#headcard{
+   display:flex;
+   margin-top: -0%;
+   margin-bottom: 17%;
+   margin-left: auto;
+   margin-right: auto;
+   width: 90%;
+   aspect-ratio: 1 / 1;
+}
+
+.head_shape{
+   position: relative;
+   left: 0px;
+   right: 0px;
+   width: 100%;
+   height: 100%;
+   margin-right: -100%;
+}
+
+#headshot_shape{
+   position: relative;
+   width: 70%;
+   left: 10%;
+   top: 10%;
+   aspect-ratio: 1 / 1;
+   object-fit: contain;
+   margin-right: -70%;
+   filter: drop-shadow(2px 2px 4px #0006);
 }
 
 #namecard{
@@ -73,6 +108,7 @@
    margin-bottom: 7%;
    margin-left: auto;
    margin-right: auto;
+   filter: drop-shadow(2px 2px 2px #0008);
 }
 
 #dinky{

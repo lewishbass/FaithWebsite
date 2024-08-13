@@ -1,4 +1,10 @@
 
+
+if(Math.random()<0.5){
+    document.getElementById("headcard").style.display = "none";
+    document.getElementById("headshot").style.display = "flex";
+}
+
 var audio = document.getElementById("audio");
 audio.volume = 0.1;
 function openTab(evt, tabName) {
