@@ -234,8 +234,55 @@
    border-radius: 0% 0% 5% 5%;
 }
 
+.inline_link{
+   transition: color 0.2s ease;
+   color:#200A;
+}
+.inline_link:link{
+   color:#200A;
+}
+.inline_link:visited{
+   color:#100A;
+}
+.inline_link:hover{
+   color:#622A;
+   filter:drop-shadow(1px 1px 0.5px #FFF4);
+}
+.inline_link:active{
+   color:#300C;
+}
+
 .tab_page.active{
    display:none;
+}
+
+
+.inline_image{
+   border-radius: 5vmin;
+   box-shadow: 2px 2px 4px #0008;
+   border: solid 0.15vmin #4A5C48;
+   margin: 3%;
+}
+
+.inline_image:hover{
+   animation: 0.1s wiggle;
+}
+
+.testi{
+   margin: 3%;
+   width: 34%;
+   height: fit-content;
+   border: dashed 0.15vmin #4A5C48;
+   padding: 1.5%;
+   border-radius: 0.3em;
+   background-color: #0005;
+   box-shadow: 2px 2px 4px #0008;
+   color: #FFF8F8A0;
+}
+
+.sig{
+   position: relative;
+   left: 20%;
 }
 
 footer{
@@ -264,4 +311,47 @@ a:hover{
 a:active{
    color: #0005;
    text-decoration: none;
+}
+
+.woof{
+   /*animation: 1s woofani ease-out;*/
+   position: absolute;
+   background-color: #0000;
+   color: #FFFF;
+   font-family: "Matemasie", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   pointer-events: none;
+   animation-fill-mode: forwards;
+   transition: 1s ease-out;
+   opacity: 1;
+}
+
+.woof.active{
+   opacity: 0;
+   transform: translateX(10vmin) translateY(-100px) rotate3d(1, 1, -1, 60deg);
+}
+
+@keyframes woofani{
+   0%{
+   }25%{
+   }50%{
+   }75%{
+   }100%{
+      opacity: 0;
+      transform: translateX(10vmin) translateY(-100px) rotate3d(1, -1, -1, 60deg);
+   }
+}
+
+
+@keyframes wiggle{
+   0%{
+      transform: rotate(0deg);
+   }25%{
+      transform: rotate(1deg);
+   }75%{
+      transform: rotate(-1deg);
+   }100%{
+      transform: rotate(0deg);
+   }
 }
