@@ -272,6 +272,9 @@
 .inline_image:hover{
    animation: 0.1s wiggle;
 }
+.inline_image:active{
+   transform: translateY(1px);
+}
 
 .testi{
    margin: 3%;
