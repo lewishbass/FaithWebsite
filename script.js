@@ -50,14 +50,15 @@ function randrange(a, b){
 pics = document.getElementsByClassName("inline_image")
 for(i = 0; i < pics.length; i++){
     pics[i].addEventListener("mouseover", function(e) {
-        woof_player.play();
+        woof_audio_instance = new Audio("images/woof.wav");
+        woof_audio_instance.play();
+        setTimeout(() => { woof_audio_instance.remove(); }, 1000); 
+
+        //woof_player.play();
         let circle = document.createElement('div');
         circle.innerHTML = "WOOF!!"
         
         let d = Math.min(this.clientWidth, this.clientHeight);
-        //circle.style.width = circle.style.height = d + 'px';
-
-        
         circle.style.left = (e.clientX - d*0.12)  + 'px';
         circle.style.top = (e.clientY - d*0.06) + 'px';
         circle.classList.add('woof');
@@ -79,14 +80,15 @@ for(i = 0; i < pics.length; i++){
     });
 
     pics[i].addEventListener("mousedown", function(e) {
-        woof_player.play();
+        woof_audio_instance = new Audio("images/woof.wav");
+        woof_audio_instance.play();
+        setTimeout(() => { woof_audio_instance.remove(); }, 1000); 
+
+        //woof_player.play();
         let circle = document.createElement('div');
         circle.innerHTML = "WOOF!!"
         
         let d = Math.min(this.clientWidth, this.clientHeight);
-        //circle.style.width = circle.style.height = d + 'px';
-
-        
         circle.style.left = (e.clientX - d*0.12)  + 'px';
         circle.style.top = (e.clientY - d*0.06) + 'px';
         circle.classList.add('woof');
