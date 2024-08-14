@@ -77,5 +77,34 @@ for(i = 0; i < pics.length; i++){
         
         setTimeout(() => { circle.remove(); }, 1000); // matches animation duration
     });
+
+    pics[i].addEventListener("mousedown", function(e) {
+        woof_player.play();
+        let circle = document.createElement('div');
+        circle.innerHTML = "WOOF!!"
+        
+        let d = Math.min(this.clientWidth, this.clientHeight);
+        //circle.style.width = circle.style.height = d + 'px';
+
+        
+        circle.style.left = (e.clientX - d*0.12)  + 'px';
+        circle.style.top = (e.clientY - d*0.06) + 'px';
+        circle.classList.add('woof');
+        circle.style.rotate = Math.floor(Math.random()*50-25)+"deg";
+        
+        document.body.append(circle);
+
+        
+        setTimeout(() => {
+            circle.style.transform = 
+            "translateX(" + randrange(-10, 10) + "vmin)" + 
+            "translateY(" + randrange(-10, 10) + "vmin)" + 
+            "scale(" + randrange(1.2, 1.8) + ")" + 
+            "rotate3d(" + randrange(-1, 1) + ", " + randrange(-1, 1) + ", " + randrange(-1, 1) + ", " + randrange(-180, 180) + "deg)";
+            circle.style.opacity = 0;
+            circle.style.transitionDuration = randrange(0.8, 2.2)+"s";}, 10);
+        
+        setTimeout(() => { circle.remove(); }, 1000); // matches animation duration
+    });
     
 }
