@@ -1,4 +1,5 @@
 
+woofs = ["woof.wav", "woof2.wav", "woof3.wav", "woof4.wav", "woof5.wav", ]
 
 if(Math.random()<0.5){
     document.getElementById("headcard").style.display = "none";
@@ -59,6 +60,9 @@ for(i = 0; i < pics.length; i++){
         circle.innerHTML = "WOOF!!"
         
         let d = Math.min(this.clientWidth, this.clientHeight);
+        //circle.style.width = circle.style.height = d + 'px';
+
+        
         circle.style.left = (e.clientX - d*0.12)  + 'px';
         circle.style.top = (e.clientY - d*0.06) + 'px';
         circle.classList.add('woof');
@@ -80,7 +84,7 @@ for(i = 0; i < pics.length; i++){
     });
 
     pics[i].addEventListener("mousedown", function(e) {
-        woof_audio_instance = new Audio("images/woof.wav");
+        woof_audio_instance = new Audio("images/" + woofs[randintrange(0, 5)]);
         woof_audio_instance.play();
         setTimeout(() => { woof_audio_instance.remove(); }, 1000); 
 
@@ -89,6 +93,9 @@ for(i = 0; i < pics.length; i++){
         circle.innerHTML = "WOOF!!"
         
         let d = Math.min(this.clientWidth, this.clientHeight);
+        //circle.style.width = circle.style.height = d + 'px';
+
+        
         circle.style.left = (e.clientX - d*0.12)  + 'px';
         circle.style.top = (e.clientY - d*0.06) + 'px';
         circle.classList.add('woof');
