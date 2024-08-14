@@ -267,6 +267,7 @@
    box-shadow: 2px 2px 4px #0008;
    border: solid 0.15vmin #4A5C48;
    margin: 3%;
+   transition: 0.1s linear;
 }
 
 .inline_image:hover{
@@ -274,6 +275,7 @@
 }
 .inline_image:active{
    transform: translateY(1px);
+   box-shadow: 2px 1px 4px #0008;
 }
 
 .testi{

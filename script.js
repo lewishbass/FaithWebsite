@@ -81,7 +81,7 @@ for(i = 0; i < pics.length; i++){
             circle.style.opacity = 0;
             circle.style.transitionDuration = randrange(0.8, 2.2)+"s";}, 10);
         
-        setTimeout(() => { circle.remove(); }, 1000); // matches animation duration
+        setTimeout(() => { circle.remove(); }, 2200); // matches animation duration
     });
 
     pics[i].addEventListener("mousedown", function(e) {
@@ -115,7 +115,7 @@ for(i = 0; i < pics.length; i++){
             circle.style.opacity = 0;
             circle.style.transitionDuration = randrange(0.8, 2.2)+"s";}, 10);
         
-        setTimeout(() => { circle.remove(); }, 1000); // matches animation duration
+        setTimeout(() => { circle.remove(); }, 2200); // matches animation duration
     });
     
 }
