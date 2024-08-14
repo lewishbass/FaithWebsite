@@ -7,6 +7,12 @@ if(Math.random()<0.5){
 
 var audio = document.getElementById("audio");
 audio.volume = 0.1;
+
+
+var woof_player = document.getElementById("woof_player");
+woof_player.volume = 0.1;
+
+
 function openTab(evt, tabName) {
    audio.play();
    var i, tabcontent, tablinks;
@@ -44,6 +50,7 @@ function randrange(a, b){
 pics = document.getElementsByClassName("inline_image")
 for(i = 0; i < pics.length; i++){
     pics[i].addEventListener("mouseover", function(e) {
+        woof_player.play();
         let circle = document.createElement('div');
         circle.innerHTML = "WOOF!!"
         
@@ -63,8 +70,9 @@ for(i = 0; i < pics.length; i++){
             circle.style.transform = "translateX(" + randrange(-10, 10) + "vmin) translateY(" + randrange(-10, 10) + "vmin)" + 
             "rotate3d(" + randrange(-1, 1) + ", " + randrange(-1, 1) + ", " + randrange(-1, 1) + ", " + randrange(-180, 180) + "deg)";
             circle.style.opacity = 0;
-            circle.style.transitionDuration = randrange(0.2, 1.5)+"s";}, 10);
+            circle.style.transitionDuration = randrange(0.8, 2.2)+"s";}, 10);
         
         setTimeout(() => { circle.remove(); }, 1000); // matches animation duration
     });
+    
 }
