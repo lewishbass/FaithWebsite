@@ -241,6 +241,7 @@
 .inline_link{
    transition: color 0.2s ease;
    color:#200A;
+   font-weight: 600;
 }
 .inline_link:link{
    color:#200A;
