@@ -233,6 +233,7 @@
    color: #0007;
    border-radius: 0% 0% 5% 5%;
    overflow-y: scroll;
+   overflow-x: hidden;
 }
 .tab_page::-webkit-scrollbar {
    display: none;
