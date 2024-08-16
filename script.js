@@ -8,7 +8,7 @@ if(Math.random()<0.5){
 }
 
 var audio = document.getElementById("audio");
-audio.volume = 0.05;
+audio.volume = 0.001;
 
 
 function openTab(evt, tabName) {
@@ -49,7 +49,7 @@ pics = document.getElementsByClassName("inline_image")
 for(i = 0; i < pics.length; i++){
     pics[i].addEventListener("mouseover", function(e) {
         woof_audio_instance = new Audio("images/woof.wav");
-        woof_audio_instance.volume = 0.04;
+        woof_audio_instance.volume = 0.01;
         woof_audio_instance.play();
         setTimeout(() => { woof_audio_instance.remove(); }, 1000); 
 
@@ -82,7 +82,7 @@ for(i = 0; i < pics.length; i++){
     pics[i].addEventListener("mousedown", function(e) {
         let r = randintrange(0, 5);
         woof_audio_instance = new Audio("images/" + woofs[r]);
-        woof_audio_instance.volume = 0.04;
+        woof_audio_instance.volume = 0.01;
         woof_audio_instance.play();
         setTimeout(() => { woof_audio_instance.remove(); }, 1000); 
 
