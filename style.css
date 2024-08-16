@@ -24,7 +24,7 @@
 	height: 100%; width: 100%;
 	overflow: hidden;
    background-image: url("images/aibr.jpg");
-   background-size: 30vmin;
+   background-size: 50vmin;
    
  }
 
@@ -196,7 +196,7 @@
 
 .tab_link{
    width: fit-content;
-   height: 40%;
+   height: 30%;
    transition: background-color 0.3s ease;
    transition: height 0.15s ease;
    margin-left: 5%;
